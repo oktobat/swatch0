@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+html { overflow-x:hidden }
+body { font:12px/1.6 arial; color:#555; }
+
+h1 { position:fixed; top:50px; left:50px; z-index:99 }
+h1 img { width:200px; }
+
+#menu { position:fixed; top:50%; transform:translateY(-50%); left:0; z-index:99 }
+#menu li { width:200px; font-size:14px; font-family:Righteous; 
+    color:#000; text-align:right; border-top:1px solid #111; 
+    transition:all 0.5s;
+}
+#menu li a { display:block; height:60px; }
+#menu li:nth-child(1):hover {font-size:24px; color:#d4164c; border-color:#d4164c; }
+#menu li:nth-child(2):hover {font-size:24px; color:#fff; border-color:#fff; }
+#menu li:nth-child(3):hover {font-size:24px; color:#ffec6a; border-color:#ffec6a; }
+#menu li:nth-child(4):hover {font-size:24px; color:#005a89; border-color:#005a89; }
+    
+#menu li:nth-child(1).on {font-size:24px; color:#d4164c; border-color:#d4164c; }
+#menu li:nth-child(2).on {font-size:24px; color:#fff; border-color:#fff; }
+#menu li:nth-child(3).on {font-size:24px; color:#ffec6a; border-color:#ffec6a; }
+#menu li:nth-child(4).on {font-size:24px; color:#005a89; border-color:#005a89; }
+
+
+#sns { position:fixed; top:40px; right:50px; z-index:99 }
+#sns li { display:inline-block;  font-size:25px; color:rgba(0, 0, 0, 0.5); 
+    margin-left:15px; transition:all 0.5s }
+#sns li:hover { transform:scale(1.5); color:rgba(0,0,0,1) }    
+
+
+section { 
+    width:100vw; height:100vh; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-attachment: fixed;
+    position:relative;
+    overflow:hidden;
+}
+
+article { position:absolute; top:46%; left:300px; z-index:11;}
+article p { font-family:righteous; font-size:50px; letter-spacing:2px; line-height:1;} 
+article span { font-size:16px; }
+
+#sect1 p { color:#d4164c;}
+#sect1 span { color:#111;}
+#sect2 p { color:#fff;}
+#sect2 span { color:#fff;}
+#sect3 p { color:#fff;}
+#sect3 span { color:#ffec6a;}
+#sect4 p { color:#005a89;}
+#sect4 span { color:#111;}
+
+#sect1 { background-image:url(../img/bg1.jpg) }
+#sect2 { background-image:url(../img/bg2.jpg) }
+#sect3 { background-image:url(../img/bg3.jpg) }
+#sect4 { background-image:url(../img/bg4.jpg) }
+
+#sect1 .p11 { position:absolute; bottom:20px; right:20px; }
+#sect1 .p12 { position:absolute; bottom:-40px; right:130px; }
+#sect1 .p13 { position:absolute; top:180px; right:60px; }
+
+#sect2 .p21 { position:absolute; bottom:-480px; right:-180px; }
+#sect2 .p22 { position:absolute; bottom:-40px; right:130px; }
+
+#sect3 .p31 { position:absolute; bottom:30px; right:180px;}
+#sect3 .p32 { position:absolute; bottom:-270px; right:110px;}
+#sect3 .p33 { position:absolute; bottom:-130px; right:-70px;}
+
+#sect4 .p41 { position:absolute; bottom:-120px; right:20px;}
+#sect4 .p42 { position:absolute; bottom:-180px; right:0px;}
